@@ -131,7 +131,7 @@
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <img class="mb-3 logo-img" src="assets/img/obj.jpg">
 
-                    <h3 class="fw-light">{Nome do Candidato}</h3>
+                    <h3 class="fw-light">Caian de Jesus Santana</h3>
 
                 </div>
             </div>
@@ -140,19 +140,19 @@
         <div class="row py-lg-5">
             <div class="col-lg-7 mx-auto">
                 
-                <form method="post" action="script.php">
+                <form method="post" action="CRUD/addCliente.php">
 
                 <div class="mb-3">
-                    <label for="" class="form-label">Nome:</label>
-                    <input type="text" class="form-control" id="" placeholder="Fulano da Silva Santos">
+                    <label for="form-nome" class="form-label">Nome:</label>
+                    <input type="text" name="nome" class="form-control" id="form-nome" placeholder="Fulano da Silva Santos">
                 </div>
                 <div class="mb-3">
-                    <label for="" class="form-label">Telefone:</label>
-                    <input type="number" class="form-control" id="" placeholder="(71) 3241-3010">
+                    <label for="form-telefone" class="form-label">Telefone:</label>
+                    <input type="number" name="telefone" class="form-control" id="form-telefone" placeholder="(71) 3241-3010">
                 </div>
                 <div class="mb-3">
-                    <label for="" class="form-label">Observação:</label>
-                    <textarea class="form-control" id="" placeholder="Alguma Observação Aqui !" rows="3"></textarea>
+                    <label for="form-obeservacao" class="form-label">Observação:</label>
+                    <textarea class="form-control" name="obeservacao" id="form-obeservacao" placeholder="Alguma Observação Aqui !" rows="3"></textarea>
                 </div>
                 
                 <div class="mb-3">
@@ -180,15 +180,11 @@
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     
-                    
-                    
-                    
                     <?php $dados = array() ?>
                     <?php foreach ($dados as $cliente): ?>
                         <!--Inicio: Cards -->
                         <div class="col">
                             <div class="card shadow-sm">
-
                                 <div class="card-body">
                                     <label class="text-uppercase"><strong>Nome do Cliente:</strong></label>
                                     <p class="card-text">FULANO DA SILVA SANTOS</p>
